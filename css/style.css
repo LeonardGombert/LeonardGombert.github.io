@@ -1,0 +1,15 @@
+body
+{
+  color : red;
+  background : coral;
+}
+
+*
+{
+  color: green;
+}
+
+p
+{
+    color : rgb(0, 0, 225);
+}
