@@ -1,22 +1,58 @@
-*
+
+@font-face
 {
-  background-color: #222222;
+ font-family: "Century Gothic Regular";
+ font-style: normal;
 }
 
+:root
+{
+ --clr-background: #222222;
+ --clr-accent: #f21bb9;
+ --clr-discrete: #494949;
+ --clr-text: #ffff;
+
+ --ff-title: "WeirdFont" sans-serif;
+ --ff-serif:sans-serif;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+  background-color: #222222;
+  color:#ffff;
+}
+
+html
+{
+  box-sizing: border-box;
+  font-family: var(--ff-serif);
+  color: var(--clr-text);
+  font-size: 1.125rem;
+}
+
+/*Typography*/
+h1, h2, h3{
+  font-family: var(--ff-title);
+  line-height: 1;
+  font-size: 60px;
+}
+
+/*
 body
 {
   font-family : CenturyGothic, Arial, sans-serif;
   color : #ffff;
 }
 
-/*underling links*/
 a
 {
   text-decoration:none;
   color:#ffff;
 }
 
-/*Change the style when hover over*/
 a:hover
 {
   color:#f21bb9;
@@ -42,11 +78,4 @@ h2
 {
   font-size: 50px;
   font-style: italic;
-}
-
-p
-{
-  orphans:3;
-  widows:3
-}
-p{margin:0 0 12.5px}
+}*/
