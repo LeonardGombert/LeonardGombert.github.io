@@ -1,19 +1,27 @@
 
 @font-face
 {
- font-family: "Century Gothic Regular";
+ font-family: 'BebasKai';
+ src: url(../fonts/BebasKai.ttf);
+ src: url(../fonts/BebasKai.otf);
+ src: url(../fonts/BebasKai.woff);
+ src: url(../fonts/BebasKai.woff2);
+ src: url(../fonts/BebasKai.eot);
  font-style: normal;
+ font-weight: 100;
 }
 
 :root
 {
  --clr-background: #222222;
  --clr-accent: #f21bb9;
- --clr-discrete: #494949;
- --clr-text: #ffff;
+ --clr-primary: #CCCCCC;
+ --clr-discrete: #999999;
+ --clr-title: #ffff;
 
- --ff-title: "WeirdFont" sans-serif;
- --ff-serif:sans-serif;
+ --ff-title: BebasKai, Open Sans;
+ --ff-logo: BebasKai, Open Sans;
+ --ff-serif: BebasKai, Open Sans;
 }
 
 *,
@@ -30,52 +38,148 @@ html
   box-sizing: border-box;
   font-family: var(--ff-serif);
   color: var(--clr-text);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+}
+
+
+body
+{
+  margin: 0;
+  color: var(--clr-discrete);
+}
+
+img
+{
+  display: block;
+  max-width: 100%;
+}
+
+section
+{
+  padding: 3em 1em;
+}
+
+h1, h2, h3, h4, p
+{
+  margin : 0;
 }
 
 /*Typography*/
-h1, h2, h3{
-  font-family: var(--ff-title);
+h2, h3{
+  font-family: BebasKai;/*var(--ff-title);*/
+  font-weight: 100;
   line-height: 1;
   font-size: 60px;
 }
 
-/*
-body
-{
-  font-family : CenturyGothic, Arial, sans-serif;
-  color : #ffff;
-}
-
-a
-{
-  text-decoration:none;
-  color:#ffff;
-}
-
-a:hover
-{
-  color:#f21bb9;
-}
-
-a:visited
-{
-  color:grey;
-}
-
-body
-{
-  vertical-align: middle;
-  text-align:center;
-}
-
-h1
-{
-  font-size: 100px;
-}
-
 h2
 {
-  font-size: 50px;
-  font-style: italic;
-}*/
+  font-size : 4rem;
+}
+
+p
+{
+  font-family: BebasKai;/*var(--ff-title);*/
+  font-weight: 100;
+  margin-bottom : 0.85rem;
+}
+
+.section-title-small
+{
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+.section-title-small small
+{
+  font-size: 0.7em;
+  line-height: 1em;
+  display: block;
+}
+
+.text-primary
+{
+  color: var(--clr-discrete);
+}
+
+.logo
+{
+  font-family: var(--ff-logo);
+  text-align: center;
+}
+
+.logo a
+{
+  text-decoration: none;
+  color: var(--clr-discrete);
+}
+
+/*Navigation*/
+header{
+  padding: 1em 0 2em;
+}
+
+nav ul
+{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a
+{
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-discrete);
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus{
+  color : var(--clr-accent);
+  text-decoration: underline;
+}
+
+/*Homepage Styles*/
+.hero
+{
+  background-color: #333;
+  background-image: url(../images/test.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: contain;
+  color: white;
+  text-align: center;
+  padding: 15vh 1em;
+}
+
+.intro
+{
+  text-align: center;
+}
+
+.about-me
+{
+  display : flex;  
+  flex-direction: column;
+  color: var(--clr-discrete);
+}
+
+.about-me__intro
+{
+  background-image:url(../images/gru.png);
+
+  background-size: cover;
+  padding: 3em 1em;
+}
+
+.about-me__body
+{
+  padding: 1em 1em 3em;
+}
+
+span.text-accent
+{
+  color : var(--clr-accent);
+}
