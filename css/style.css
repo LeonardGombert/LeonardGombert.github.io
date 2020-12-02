@@ -43,3 +43,10 @@ h2
   font-size: 50px;
   font-style: italic;
 }
+
+p
+{
+  orphans:3;
+  widows:3
+}
+p{margin:0 0 12.5px}
