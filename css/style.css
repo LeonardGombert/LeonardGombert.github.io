@@ -13,11 +13,18 @@
 
 :root
 {
+ /* DARK THEME
  --clr-background: #222222;
  --clr-accent: #f21bb9;
  --clr-primary: #CCCCCC;
  --clr-discrete: #999999;
- --clr-title: #ffff;
+ --clr-title: #ffff;*/
+
+ --clr-background: #ffffff;
+ --clr-accent: #e8175d;
+ --clr-primary: #2c348f;
+ --clr-discrete: #363535;
+ --clr-title: #000000;
 
  --ff-title: BebasKai, Open Sans;
  --ff-logo: BebasKai, Open Sans;
@@ -161,7 +168,7 @@ nav a:hover, nav a:focus{
 
 .about-me
 {
-  display : flex;  
+  display : flex;
   flex-direction: column;
   color: var(--clr-discrete);
 }
