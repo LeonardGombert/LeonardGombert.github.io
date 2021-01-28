@@ -68,3 +68,27 @@ header
 {
   background-color: green;
 }
+
+.presentation-container
+{
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-title
+{
+  margin-bottom: 5vh;
+  font-size: 6em;
+  font-weight:500;
+  color: var(--clr-primary); 
+}
+
+.presentation-sub
+{
+  font-size: 3.5em;
+  font-weight: 100;
+  color: var(--clr-discrete); 
+}
