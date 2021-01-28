@@ -7,18 +7,17 @@
   --clr-title: #e8175d;
 }
 
-
 *
 {
   margin : 0px;
   padding : 0px;
   box-sizing : border-box;
-  background-color: var(--clr-background);
   text-decoration: none;
 }
 
 /*Don't change the color of visited sites*/
-a, a:visited, a:hover, a:active {
+a, a:visited, a:hover, a:active 
+{
   color: inherit;
 }
 
@@ -27,46 +26,48 @@ body
   font-family: 'Bebas Neue', cursive;
 }
 
-header
+.nav-bar
 {
   display: flex;
   font-weight : 100vh;
-  width: 95%;
+  width: 100%;
   margin: auto;
-  color: var(--clr-accent);
+  color: var(--clr-background);
+  background-color: var(--clr-primary);
 }
 
 .pages-container li
 {  
   display: inline-flex;
-  font-size: 2.5em;
+  font-size: 2.25em;
   margin: 0 10px 0 10px;
 }
 
 .pages-container,.home-container,.socials-container
 {  
-  display: flex;
+  margin : auto;
   flex : 1;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-primary);
+  background-color: transparent;
 }
 
 .pages-container
 {
+  margin-left: 10vh;
   justify-content: space-between;
-  background-color: red;
 }
 
 .home-container
 {
+  text-align: center;
   font-size: 3.5em;
-  background-color: blue;
 }
 
 .socials-container
 {
-  background-color: green;
+  margin-right: 10vh;
+  /*background-color: red;*/
 }
 
 .presentation-container
@@ -83,7 +84,7 @@ header
   margin-bottom: 5vh;
   font-size: 6em;
   font-weight:500;
-  color: var(--clr-primary); 
+  color: var(--clr-accent); 
 }
 
 .presentation-sub

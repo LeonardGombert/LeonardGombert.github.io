@@ -1,0 +1,37 @@
+:root
+{
+  --clr-background: #ffffff;
+  --clr-accent: #2c348f;
+  --clr-primary: #363535;
+  --clr-discrete: #363535;
+  --clr-title: #e8175d;
+}
+
+*
+{
+  margin : 0px;
+  padding : 0px;
+  box-sizing : border-box;
+  text-decoration: none;
+}
+
+/*Don't change the color of visited sites*/
+a, a:visited, a:hover, a:active 
+{
+  color: inherit;
+}
+
+body
+{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.rounded-box
+{
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: var(--clr-title);
+}
