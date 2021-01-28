@@ -54,7 +54,7 @@ body
 
 .pages-container
 {
-  margin-left: 10vh;
+  margin-left: 5em;
   justify-content: space-between;
 }
 
@@ -66,8 +66,15 @@ body
 
 .socials-container
 {
-  margin-right: 10vh;
-  /*background-color: red;*/
+  margin-right: 5em;
+  text-align: right;
+  word-spacing: .25em;
+}
+.socials-container img
+{
+  padding: 5px;
+  height: 2em;
+  width: 2em;
 }
 
 .presentation-container
