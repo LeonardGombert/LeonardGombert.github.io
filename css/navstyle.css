@@ -1,7 +1,7 @@
 :root
 {
   --clr-background: #ffffff;
-  --clr-accent: #2c348f;
+  --clr-accent: rgb(44, 52, 143);
   --clr-primary: #363535;
   --clr-discrete: #363535;
   --clr-title: #e8175d;
@@ -46,11 +46,12 @@ body
 .nav-bar
 {    
   display: flex;
-  font-weight : 100vh;
+
   width: 100%;
   margin: auto;
+
   color: var(--clr-background);
-  background-color: var(--clr-accent);
+
   padding: 2em 0 2em 0;
 }
 
@@ -92,13 +93,18 @@ body
 .socials-container img
 {
   padding: 5px;
-  height: 2em;
-  width: 2em;
+  height: 2.5em;
+  width: 2.5em;
 }
 
-.sticky
+.o-sticky
 {
     position: fixed;
     top: 0;
-    width: 100%;
+    background-color: var(--clr-accent);
+}
+
+.s-hidden
+{
+    opacity:0;
 }

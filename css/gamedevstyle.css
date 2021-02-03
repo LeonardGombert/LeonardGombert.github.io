@@ -32,10 +32,5 @@ body
   margin: auto;
   height: 80px;
   width: 70%;
-  background-color: var(--clr-accent  );
-}
-
-.rounded-box
-{
-
+  background-color: var(--clr-accent);
 }

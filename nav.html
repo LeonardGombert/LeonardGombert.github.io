@@ -8,7 +8,7 @@
             <title>Léonard Gombert Portfolio</title>
         </head>
     <body>
-        <header class = "nav-bar" id="navbar">                    
+        <header class = "nav-bar o-sticky s-hidden" id="navbar">                    
             <nav class = "pages-container">
                 <ul class="page-links">
                 <li><a class = "page-link" href="gamedev.html">Game Dev</a></li>
@@ -61,5 +61,19 @@
             header.classList.remove("sticky");
           }
         }
+    </script>
+
+    <script>
+        const checkpoint = 300;
+ 
+        window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= checkpoint) {
+            opacity = 0 + currentScroll / checkpoint;
+        } else {
+            opacity = 1;
+        }
+        document.querySelector(".s-hidden").style.opacity = opacity;
+        });
     </script>
 </html>
