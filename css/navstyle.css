@@ -1,0 +1,104 @@
+:root
+{
+  --clr-background: #ffffff;
+  --clr-accent: #2c348f;
+  --clr-primary: #363535;
+  --clr-discrete: #363535;
+  --clr-title: #e8175d;
+}
+
+*
+{
+  margin : 0px;
+  padding : 0px;
+  box-sizing : border-box;
+  text-decoration: none;
+}
+
+@font-face 
+{
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.fdf491ce5ff5.woff");
+}
+
+
+/*Don't change the color of visited sites*/
+a, a:visited, a:hover, a:active 
+{
+  color: inherit;
+}
+
+a:hover
+{
+  color: var(--clr-title);
+}
+
+a:active
+{
+  color: var(--clr-accent);
+}
+
+body
+{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.nav-bar
+{    
+  display: flex;
+  font-weight : 100vh;
+  width: 100%;
+  margin: auto;
+  color: var(--clr-background);
+  background-color: var(--clr-accent);
+  padding: 2em 0 2em 0;
+}
+
+.pages-container li
+{  
+  display: inline-flex;
+  font-size: 2em;
+  margin: 0 10px 0 10px;
+}
+
+.pages-container,.home-container,.socials-container
+{  
+  margin : auto;
+  flex : 1;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.pages-container
+{
+  margin-left: 5em;
+  justify-content: space-between;
+}
+
+.home-container
+{
+  text-align: center;
+  font-size: 3em;
+}
+
+.socials-container
+{
+  margin-right: 5em;
+  text-align: right;
+  word-spacing: .25em;
+}
+
+.socials-container img
+{
+  padding: 5px;
+  height: 2em;
+  width: 2em;
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

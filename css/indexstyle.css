@@ -36,59 +36,8 @@ body
   font-family: 'Bebas Neue', cursive;
 }
 
-.nav-bar
-{
-  display: flex;
-  font-weight : 100vh;
-  width: 100%;
-  margin: auto;
-  color: var(--clr-background);
-  background-color: var(--clr-primary);
-}
-
-.pages-container li
-{  
-  display: inline-flex;
-  font-size: 2.25em;
-  margin: 0 10px 0 10px;
-}
-
-.pages-container,.home-container,.socials-container
-{  
-  margin : auto;
-  flex : 1;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}
-
-.pages-container
-{
-  margin-left: 5em;
-  justify-content: space-between;
-}
-
-.home-container
-{
-  text-align: center;
-  font-size: 3.5em;
-}
-
-.socials-container
-{
-  margin-right: 5em;
-  text-align: right;
-  word-spacing: .25em;
-}
-.socials-container img
-{
-  padding: 5px;
-  height: 2em;
-  width: 2em;
-}
-
 .presentation-container
-{
+{ 
   margin-top: 30vh;
   display: flex;
   justify-content: center;
@@ -108,5 +57,11 @@ body
 {
   font-size: 3.5em;
   font-weight: 100;
-  color: var(--clr-discrete); 
+  color: var(--clr-background); 
+}
+
+.parallax
+{
+  background-image: linear-gradient(rgb(148, 232, 243), white);
+  margin: 0;
 }

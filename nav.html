@@ -4,11 +4,11 @@
             <meta charset="UTF-8">    
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/indexstyle.css">
+            <link rel="stylesheet" href="css/navstyle.css">
             <title>Léonard Gombert Portfolio</title>
         </head>
     <body>
-        <header class = "nav-bar">                    
+        <header class = "nav-bar" id="navbar">                    
             <nav class = "pages-container">
                 <ul class="page-links">
                 <li><a class = "page-link" href="gamedev.html">Game Dev</a></li>
@@ -44,4 +44,22 @@
             </nav>
         </header>        
     </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("navbar");
+        var sticky = header.offsetTop;
+        
+        function myFunction() 
+        {
+          if (window.pageYOffset > sticky) 
+          {
+            header.classList.add("sticky");
+          } 
+          else 
+          {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </html>
