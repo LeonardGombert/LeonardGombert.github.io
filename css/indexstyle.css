@@ -21,6 +21,16 @@ a, a:visited, a:hover, a:active
   color: inherit;
 }
 
+a:hover
+{
+  color: var(--clr-title);
+}
+
+a:active
+{
+  color: var(--clr-accent);
+}
+
 body
 {
   font-family: 'Bebas Neue', cursive;
