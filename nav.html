@@ -8,21 +8,21 @@
             <title>Léonard Gombert Portfolio</title>
         </head>
     <body>
-        <header class = "nav-bar o-sticky s-hidden" id="navbar">                    
+        <header class = "nav-bar" id="navbar">   
+            <nav class="home-container">
+                <a href="index.html">Léonard Gombert</a>
+            </nav>                 
             <nav class = "pages-container">
                 <ul class="page-links">
                 <li><a class = "page-link" href="gamedev.html">Game Dev</a></li>
-                <li><a class = "page-link" href="gamedesign.html">Game Design</a></li>
+                <li><a class = "page-link" href="gamedesign.html">Side-Projects</a></li>
                 <li><a class = "page-link" href="contact.html">Contact</a></li>
                 <li><a class = "page-link" href="cv.html">CV</a></li>
                 </ul>
             </nav>
         
-            <nav class="home-container">
-                <a href="index.html">Léonard Gombert</a>
-            </nav>
         
-            <nav class="socials-container">
+            <!--<nav class="socials-container">
                 <div class="social-buttons">
                     <a href="https://www.linkedin.com/in/leonard-gombert/" target="_blank" class="social-button">
                         <img src="/images/linkedIn.png"/>
@@ -39,41 +39,9 @@
                     <a href="https://gombertleonard.medium.com/" target="_blank" class="social-button">
                         <img src="/images/Medium.png" width="50" height="50"/>
                     </a>
-                </div>
-                
-            </nav>
+                </div>                
+            </nav>-->
+
         </header>        
     </body>
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var header = document.getElementById("navbar");
-        var sticky = header.offsetTop;
-        
-        function myFunction() 
-        {
-          if (window.pageYOffset > sticky) 
-          {
-            header.classList.add("sticky");
-          } 
-          else 
-          {
-            header.classList.remove("sticky");
-          }
-        }
-    </script>
-
-    <script>
-        const checkpoint = 300;
- 
-        window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll <= checkpoint) {
-            opacity = 0 + currentScroll / checkpoint;
-        } else {
-            opacity = 1;
-        }
-        document.querySelector(".s-hidden").style.opacity = opacity;
-        });
-    </script>
 </html>
