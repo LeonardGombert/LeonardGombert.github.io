@@ -42,6 +42,7 @@ a:active
 body
 {
   font-family: 'Bebas Neue', cursive;
+  background-color: var(--clr-dark-med);
 }
 
 .nav-bar

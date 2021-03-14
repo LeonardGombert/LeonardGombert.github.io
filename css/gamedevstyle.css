@@ -1,10 +1,11 @@
 :root
 {
-  --clr-background: #ffffff;
-  --clr-accent: #2c348f;
-  --clr-primary: #363535;
-  --clr-discrete: #363535;
-  --clr-title: #e8175d;
+  --clr-white: #ffffff;
+  --clr-blue: rgb(44, 52, 143);
+  --clr-dark-dark: #1A1A1A;
+  --clr-dark-med: #232323;
+  --clr-dark-light: #363535;
+  --clr-pink: #e8175d;
 }
 
 *
@@ -21,16 +22,10 @@ a, a:visited, a:hover
   color: inherit;
 }
 
-body
-{
-  font-family: 'Bebas Neue', cursive;
-}
-
 .projects-container
 {
   justify-self: center;
   margin: auto;
   height: 80px;
-  width: 70%;
-  background-color: var(--clr-accent);
+  width: 80%;
 }
