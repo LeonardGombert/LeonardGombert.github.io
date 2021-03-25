@@ -6,6 +6,7 @@
   --clr-dark-med: #232323;
   --clr-dark-light: #363535;
   --clr-pink: #e8175d;
+  --clr-pink-white: #faf2f5;
 }
 
 *
@@ -37,34 +38,50 @@ a:hover
 
 .presentation-header
 {
-    font-size: 4em;
-    margin : 3.5em 2em 1em;
+    font-size: 3.5vmax;
+    margin : 3.5vmax 2vmax 1vmax;
     font-weight: 100;
 
     color : var(--clr-white);
 }
+.t-pink{color : var(--clr-pink);}
 
 .presentation-subtitle
 {
     margin : 0em 6em 1em 6em;
 
-    font-size: 3em;
+    font-size: 2.5vmax;
     font-weight: 100;
     color: var(--clr-dark-light);
 }
 
 .presentation-projects
 {
-    margin : 1em 6em;
+    margin : 1vmax 6vmax;
 
-    font-size: 2.5em;
+    font-size: 2.5vmax;
     font-weight : 200;
     color: var(--clr-white);
 }
 
 .project-link
 {
+ /* animation: pulse 4s infinite;*/
   color: var(--clr-white);
+}
+
+@keyframes pulse{
+  0%{
+    color: var(--clr-white);
+  }
+
+  50%{
+    color: var(--clr-pink-white);
+  }
+
+  100%{
+    color: var(--clr-white);
+  }
 }
 
 .s-centered
